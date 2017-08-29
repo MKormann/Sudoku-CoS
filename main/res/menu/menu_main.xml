@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/settings"
+      tools:context="com.licktopia.myapplication.MainActivity">
+
+
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/share2"
+        android:title="Share app..."
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/settingsMenu"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_instructions"
+        android:orderInCategory="100"
+        android:title="@string/action_instructions"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/main_menu"
+        android:orderInCategory="100"
+        android:title="@string/new_board"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/save_and_exit"
+        android:orderInCategory="100"
+        android:title="@string/save_game"
+        android:visible="true"
+        app:showAsAction="never" />
+
+
+</menu>

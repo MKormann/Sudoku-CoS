@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="@string/highlight_key"
+        android:title="@string/Highlights"
+        android:summary="@string/Highsummary"
+        android:defaultValue="true"
+        android:id="@+id/highlights"/>
+    <CheckBoxPreference
+        android:key="@string/sounds_key"
+        android:title="@string/Sounds"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:key="@string/lilnumber_key"
+        android:title="@string/LilNumbers"
+        android:summary="@string/show_the_total"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:key="@string/autosave"
+        android:title="@string/autosave"
+        android:summary="@string/saves_inprogress"
+        android:defaultValue="true"/>
+
+
+</PreferenceScreen>

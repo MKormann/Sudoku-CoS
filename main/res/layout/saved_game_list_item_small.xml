@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:weightSum="100"
+        card_view:background="@color/green">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="60"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/start_savedgame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:text="Resume"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/delete_savedgame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:text="Delete"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="40"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/savedgame_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|clip_vertical"
+                    android:text="Jul, 12 2017"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/savedgame_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|clip_vertical"
+                    android:text="09:45 PM -autosave"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/savedgame_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:scaleType="fitCenter"
+            android:text="Number"
+            android:textColor="@color/white"
+            android:typeface="monospace"
+            card_view:background="@drawable/peacock" />
+
+        <ImageView
+            android:id="@+id/savedgame_level"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:scaleType="fitCenter"
+            android:text="Medium"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:typeface="monospace"
+            card_view:background="@drawable/experticon" />
+
+    </LinearLayout>
+</LinearLayout>

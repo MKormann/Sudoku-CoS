@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:weightSum="100"
+        card_view:background="@color/green">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:background="@android:color/transparent"
+            android:elevation="0dp"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="60"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/game_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:text=" 43425 XP"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/game_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_horizontal"
+                    android:text="511:53"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="40"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/game_squares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="46/46"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="italic"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:id="@+id/game_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="Apr, 12 2017"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:typeface="monospace" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/game_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:scaleType="fitCenter"
+            android:text="Number"
+            android:textColor="@color/white"
+            android:typeface="monospace"
+            card_view:src="@drawable/peacock" />
+
+        <ImageView
+            android:id="@+id/game_level"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="15"
+            android:gravity="center_vertical|center_horizontal"
+            android:scaleType="fitCenter"
+            android:text="Medium"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:typeface="monospace"
+            card_view:src="@drawable/experticon" />
+
+    </LinearLayout>
+</LinearLayout>

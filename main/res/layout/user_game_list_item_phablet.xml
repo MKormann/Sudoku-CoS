@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    android:layout_margin="6dp"
+    android:elevation="10dp"
+    android:fadingEdge="horizontal|vertical"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    card_view:layout_width="200dp">
+
+    <LinearLayout
+        android:id="@+id/us_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/us_level"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                app:srcCompat="@drawable/experticon" />
+
+            <TextView
+                android:id="@+id/us_user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="Licktopia"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/is_completed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="10"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/cbut_darkreddot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_above="@+id/bottomLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="92"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="6dp"
+                android:visibility="visible"
+                android:weightSum="90">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder28"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder37"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder46"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder55"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder64"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder73"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+                    <TextView
+                        android:id="@+id/usersquareholder2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder29"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder38"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder47"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder56"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder65"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder74"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder30"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder39"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder48"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder57"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder66"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder75"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler3"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder40"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder49"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder58"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder67"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder76"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler4"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder23"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder32"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder41"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder50"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder59"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder68"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder77"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler5"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder24"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder33"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder42"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder51"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder60"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder69"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder78"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler6"
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder25"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder34"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder43"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder52"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder61"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder70"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder79"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler7"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder26"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder35"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder44"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder53"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder62"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder71"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder80"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/filler8"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="90">
+
+
+                    <TextView
+                        android:id="@+id/usersquareholder9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder27"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder36"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder45"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder54"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder63"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder72"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/usersquareholder81"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        card_view:text="5">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:elevation="1dp"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="100"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:id="@+id/us_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="50"
+                        android:gravity="center"
+                        android:text="Jan 13"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/us_diff"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="50"
+                        android:gravity="center"
+                        android:text="506"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

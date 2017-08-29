@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/square"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/highlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/squareNotepad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/squareNotepad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/squareNotepad4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="4"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/squareNotepad7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="7"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/squareNotepad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/squareNotepad5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="5"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/squareNotepad8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="8"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:id="@+id/squareNotepad3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/squareNotepad6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:text="6"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <ImageView
+
+                    android:id="@+id/squareNotepad9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:scaleX=".9"
+                    android:scaleY=".9"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+
+            android:id="@+id/squareNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:id="@+id/squareColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/square_texture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:alpha=".4"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:srcCompat="@android:color/transparent"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/white_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".75"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:srcCompat="@drawable/whitex" />
+
+    </RelativeLayout>
+</RelativeLayout>

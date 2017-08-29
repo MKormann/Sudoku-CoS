@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+
+    <LinearLayout
+        android:id="@+id/statsview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="48"
+                android:background="@drawable/gold_gradient"
+                android:paddingBottom="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/title_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/icon_gamer"
+                        android:layout_toLeftOf="@+id/imageView33"
+                        android:layout_toRightOf="@+id/icon_gamer"
+                        android:layout_toStartOf="@+id/imageView33"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="Golden Eagle"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="38sp" />
+
+                    <ImageView
+                        android:id="@+id/icon_gamer"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rank_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/xp_display"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/title_bar"
+                    android:padding="25dp"
+                    app:srcCompat="@drawable/rank5" />
+
+                <TextView
+                    android:id="@+id/xp_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_above="@+id/powerup_display"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="monospace"
+                    android:text="XP 56454563"
+                    android:textColor="@color/white"
+                    android:textSize="48sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/powerup_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Next Power Up 56341323 XP"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="38"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/did_you_know"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="15"
+                        android:background="#ea3f6a"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Did you know?"
+                        android:textColor="@color/white"
+                        android:textSize="40sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/fact_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="65"
+                        android:background="#ea3f6a"
+                        android:orientation="vertical">
+
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/fact_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.1"
+                                    android:padding="20dp"
+                                    android:text="The First World Sudoku Championship was held in Italy in 2006 and has been held annually since in different locations. Playing Sudoku regularly can have benefits, like boosting your concentration and focus, preventing or easing depression and possibly even preventing dementia and Alzheimer’s disease, according to some studies."
+                                    android:textColor="@color/white"
+                                    android:textSize="30sp"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/color1"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/achievements"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="false"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hint_button"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="Achievements"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/leader"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="false"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hint_button"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="Leaderboards"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha=".3"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/keyboardbg" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@color/color1"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/history_button"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="false"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hint_button"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="Game History"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/sign_out_new"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="false"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/hint_button"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text="Sign Out"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha=".3"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/keyboardbg" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/backgroundcroppedsmall" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/badge0"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con1"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge1"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con2"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge2"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con3"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge3"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con4"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge4"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con5"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge5"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con6"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge6"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con7"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge7"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con8"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge8"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con9"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge9"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con10"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge10"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con11"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge11"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con12"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge12"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con13"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge13"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con14"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge14"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con15"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge15"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con16"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge16"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con17"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge17"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con18"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge18"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con19"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge19"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con20"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge20"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con21"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge21"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con22"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge22"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con23"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge23"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con24"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge24"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con25"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge25"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con26"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge26"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con27"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge27"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con28"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge28"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con29"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge29"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con30"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge30"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con31"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge31"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con32"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge32"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con33"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge33"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con34"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge34"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con35"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge35"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con36"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge36"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con37"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge37"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con38"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge38"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con39"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge39"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con40"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge40"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con41"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge41"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con42"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge42"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con43"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge43"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con44"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge44"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con45"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge45"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con46"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge46"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con47"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge47"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con48"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge48"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con49"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge49"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con50"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge50"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+                        <ImageView
+                            android:id="@+id/con51"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:src="@drawable/greenline2"
+                            app:srcCompat="@drawable/greenline2" />
+
+                        <ImageView
+                            android:id="@+id/badge51"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="30dp"
+                            app:srcCompat="@drawable/rank0" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

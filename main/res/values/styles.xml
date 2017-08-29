@@ -1,0 +1,83 @@
+<!-- Base application theme. -->
+<resources>
+<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+
+</style>
+
+<style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+<!-- android:textColorPrimary is the color of the title text in the Toolbar  -->
+<item name="android:textColorPrimary">@android:color/black</item>
+<!-- actionMenuTextColor is the color of the text of action (menu) items  -->
+
+<item name="actionMenuTextColor">@android:color/white</item>
+
+
+<!-- Tints the input fields like checkboxes and text fields -->
+<item name="colorAccent">@android:color/white</item>
+<!-- Applies to views in their normal state. -->
+<item name="colorControlNormal">@android:color/white</item>
+<!-- Applies to views in their activated state (i.e checked or switches) -->
+<item name="colorControlActivated">@android:color/white</item>
+<!-- Applied to framework control highlights (i.e ripples or list selectors) -->
+<item name="colorControlHighlight">@android:color/white</item>
+
+<!-- Enable these below if you want clicking icons to trigger a ripple effect -->
+<!--
+<item name="selectableItemBackground">?android:selectableItemBackground</item>
+<item name="selectableItemBackgroundBorderless">?android:selectableItemBackground</item>
+-->
+
+</style>
+
+    <!-- This configures the styles for the title within the Toolbar  -->
+<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+<item name="android:textSize">21sp</item>
+<item name="android:textStyle">italic</item>
+
+</style>
+
+    <style name="InvPopup" parent="@style/AppTheme">
+        <item name="android:background">@color/PopupColor</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_gravity">top|right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="Blurb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/BlurbColor</item>
+    </style>
+
+
+    <style name="InvPopupText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/PopupTextColor</item>
+        <item name="android:text">@string/inv_popup_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="InvPopupButton" parent="@style/GameButton">
+        <item name="android:background">@color/ButtonTextColor</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="GameButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/ButtonTextColor</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    </resources>
+

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_instructions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.licktopia.thechampionofsudoku.Activities.UIActivities.InstructionsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rules of Sudoku "
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The classic Sudoku game involves a grid of 81 squares. The grid is divided into nine blocks, each containing nine squares. The rules of the game are simple: each of the nine blocks has to contain all the numbers 1-9 (or colors) within its squares. Each number can only appear once in a row, column or box."
+                android:textSize="30sp"
+                tools:text="The classic Sudoku game involves a grid of 81 squares. The grid is divided into nine blocks, each containing nine squares. The rules of the game are simple: each of the nine blocks has to contain all the numbers 1-9 (or colors) within its squares. Each number can only appear once in a row, column or box." />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scoring "
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you do not wish to view the score, then tap to hide it. "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beginner: 30 points per square "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy: Level bonus 20, 60 points per square, 1 point/30 second penalty"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medium:  Level bonus 100, 100 points per square, 10 points/25 second penalty "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hard: Level bonus 200, 110 points per square, 10 points/25 second penalty + time bonus 10 points per second remaining to 10 minutes "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expert: Level bonus 300, 120 points per square, 10 points/25 second penalty + time bonus 10 points per second remaining to 11 minutes "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Master: Level bonus 400, 130 points per square, 10 points/20 second penalty + time bonus 10 points per second remaining to 12 minutes "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Points per square are only awarded if the correct value is entered into the square the first time a value is attempted to enter the square. Illegal attempts or incorrect values will make the square ineligible for points for the remainder of the game. Points for a square are awarded when an entry is made, and deducted when a square is emptied "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Difficulty Levels "
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                android:visibility="gone"
+                tools:text="Difficulty Levels" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Beginner - 45 numbers in each Sudoku "
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easy - 40 numbers in each Sudoku"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medium - 35 numbers in each Sudoku "
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hard - 30 numbers in each Sudoku"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expert - 27 numbers in each Sudoku"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Master - 25 numbers in each Sudoku "
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grid"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                tools:text="Grid " />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clicking on an empty square, or a square with only candidates will highlight that square. If the keyboard is not open, it will open to allow you to update that square. If the square has contains a solved square that a user has input, that value will be deleted and any candidates previously stored in that square will become visible again. If the square has a value, all other values of the same number/color will be highlighted. Squares that are pre-filled at the start of the puzzle have solid black numbers (or colors without borders) and cannot be modified.   "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keyboard"
+                android:textSize="30sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keys 1-9/Colors when the notepad key is not selected - the value will be entered into the selected square. User input numbers will be in grey (user input colors will have a white border) to distinguish them from the puzzle’s fixed values. If the square is filled by a different number or color, that number or color will be replaced. If it is the same color, it will delete the selected color and any candidates previously stored in that square will become visible again. "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keys 1-9/Colors when the notepad key is selected - mini numbers/colors will be entered into the square to represent possible candidates. If the candidate already appears it will be toggled off. Repeated clicking of a number/color will toggle the candidate on or off. "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notepad Key - When this key is selected, it puts the keyboard in Candidates mode. If the current square is filled with a value, that value will be deleted. Clicking on the number/color keys will in Candidates mode allows you to edit the candidates for a given square. "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hints Key - Displays solving strategies, Check Progress, and Solve Now buttons. Maintain solving strategies buttons to view different ways to solve the current Sudoku board. A point penalty is incurred. Check Progress highlights incorrect squares, and Solve Now shows the computer's solving steps to get the solution. "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear Key - Empties the square. "
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

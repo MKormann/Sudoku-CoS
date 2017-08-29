@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#454444</color>
+    <color name="textColorPrimary">#030303</color>
+    <color name="colorAccent">#1e91d6</color>
+    <color name="colorHighLight">#f0e4e3de</color>
+    <color name="Jeffgrey">#7c7c7c</color>
+    <color name="standout">#e7e4d6</color>
+    <color name="ltgrey">#a0cccccc</color>
+    <color name="notepadColorHighlight">#fdfdfb</color>
+    <color name="notepadNumberHighlight">#888888</color>
+    <color name="guess">#926239</color>
+    <color name="white">#ffffff</color>
+    <color name="background">#eb454444</color>
+    <color name="colorFondoTrans">#f5454444</color>
+    <color name="colorKeypad">#454444</color>
+    <color name="lightred">#ea3f6a</color>
+    <color name="silver">#7c8597</color>
+    <color name="green">#329d53</color>
+    <color name="highlightred">#46d9433b</color>
+    <color name="color1">#abd03a</color>
+    <color name="color2">#1e91d6</color>
+    <color name="color3">#ea3f6a</color>
+    <color name="color4">#7d1538</color>
+    <color name="color5">#7c8597</color>
+    <color name="color6">#e18335</color>
+    <color name="color7">#4a2772</color>
+    <color name="color8">#f2ca08</color>
+    <color name="color9">#329d53</color>
+    <color name="samecolorhiglight">#fff176</color>
+    <color name="red">#ff3333</color>
+    <color name="sudokublue">#2979ff</color>
+    <color name="icongrey">#bdc3c6</color>
+    <color name="PopupColor">@color/colorAccent</color>
+    <color name="PopupTextColor">#ffffff</color>
+    <color name="ButtonTextColor">#ffffff</color>
+    <color name="BlurbColor">#a0a0a0</color>
+    <color name="transparent_white">#4bffffff</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="icon_color">#bdc3c6</color>
+    <color name="semitransparent_background">#b4454444</color>
+
+</resources>
